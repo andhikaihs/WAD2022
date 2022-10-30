@@ -31,7 +31,7 @@
 
         <!-- Table -->
         <section>
-            <div class="container-fluid">
+            <div class="container-fluid" style="height: 530px;;">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -90,7 +90,7 @@
                         </tr>
                     </tbody>
                 </table>
-            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
         </section>
 
         <!-- Footer -->
