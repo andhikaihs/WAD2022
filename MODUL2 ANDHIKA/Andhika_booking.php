@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
+        <title>Booking</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     <body>
@@ -61,9 +61,9 @@
                             <div class="mt-3">
                                 <label for="type" class="form-label">Car Type</label>
                                 <select class="form-select" aria-label="Car Type" name="type" id="type">
-                                    <option <?php if($car=="lexus"){echo "selected";}?> value="lexus">Lexus UX 300e</option>
-                                    <option <?php if($car=="hyundai"){echo "selected";}?> value="hyundai">Hyundai Ioniq 5</option>
-                                    <option <?php if($car=="wuling"){echo "selected";}?> value="wuling">Wuling Air EV</option>
+                                    <option <?php if($car=="lexus"){echo "selected";}?> value="Lexus UX 300e">Lexus UX 300e</option>
+                                    <option <?php if($car=="hyundai"){echo "selected";}?> value="Hyundai Ioniq 5">Hyundai Ioniq 5</option>
+                                    <option <?php if($car=="wuling"){echo "selected";}?> value="Wuling Air EV">Wuling Air EV</option>
                                 </select>
                             </div>
                             <div class="mt-3">
@@ -73,15 +73,15 @@
                             <div class="mt-3">
                                 <label for="service" class="form-label">Add Service(s)</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="health" name="service[]">
+                                    <input class="form-check-input" type="checkbox" value="Health Protocol" name="service[]">
                                     <label for="form-check-label">Health protocol / Rp25.000</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="driver" name="service[]">
+                                    <input class="form-check-input" type="checkbox" value="Driver" name="service[]">
                                     <label for="form-check-label">Driver / Rp100.000</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="battrey" name="service[]">
+                                    <input class="form-check-input" type="checkbox" value="Battery Filled" name="service[]">
                                     <label for="form-check-label">Battery filled / Rp250.000</label>
                                 </div>
                             </div>
