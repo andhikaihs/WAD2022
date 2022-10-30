@@ -97,7 +97,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="text-muted text-center bg-light">
+        <footer class="text-muted text-center bg-light fixed-bottom">
             <div class="text-center p-3" style="color:black">
                 Created by Andhika_1202200168
             </div>
