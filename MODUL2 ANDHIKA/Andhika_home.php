@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 23rem;">
-                            <img src="img/lexusux300e.png" class="card-img-top style-img" alt="Lexus UX 300e">
+                            <img src="img/lexus.png" class="card-img-top style-img" alt="Lexus UX 300e">
                             <div class="card-body">
                                 <h5 class="card-title">Lexus UX 300e</h5>
                                 <p class="card-text">Rp. 1000000/day</p>
@@ -54,13 +54,13 @@
                                 <li class="list-group-item text-primary"><strong>Automatic</strong></li>
                             </ul>
                             <div class="card-body text-center bg-light">
-                                <a href="#" class="btn btn-primary">Book Now</a>
+                                <a href="Andhika_booking.php?car=lexus" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 23rem">
-                            <img src="img/hyundaiioniq5.png" class="card-img-top style-img" alt="Hyundai Ioniq 5">
+                            <img src="img/hyundai.png" class="card-img-top style-img" alt="Hyundai Ioniq 5">
                             <div class="card-body">
                                 <h5 class="card-title">Hyundai Ioniq 5</h5>
                                 <p class="card-text">Rp. 800000/day</p>
@@ -71,13 +71,13 @@
                                 <li class="list-group-item text-primary"><strong>Automatic</strong></li>
                             </ul>
                             <div class="card-body text-center bg-light">
-                                <a href="#" class="btn btn-primary">Book Now</a>
+                                <a href="Andhika_booking.php?car=hyundai" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 23rem">
-                            <img src="img/wulingairev.png" class="card-img-top style-img" alt="Wuling Air EV">
+                            <img src="img/wuling.png" class="card-img-top style-img" alt="Wuling Air EV">
                             <div class="card-body">
                                 <h5 class="card-title">Wuling Air EV</h5>
                                 <p class="card-text">Rp. 500000/day</p>
@@ -88,7 +88,7 @@
                                 <li class="list-group-item text-primary"><strong>Automatic</strong></li>
                             </ul>
                             <div class="card-body text-center bg-light">
-                                <a href="#" class="btn btn-primary">Book Now</a>
+                                <a href="Andhika_booking.php?car=wuling" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
