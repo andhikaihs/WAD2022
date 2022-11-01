@@ -85,7 +85,7 @@
                                     <label for="form-check-label">Battery filled / Rp250.000</label>
                                 </div>
                             </div>
-                            <div class="d-grid gap-2 mt-3">
+                            <div class="d-grid gap-2 mt-3 mb-5">
                                 <button class="btn btn-success" type="submit">Book</button>
                             </div>
                         </form>
