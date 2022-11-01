@@ -28,7 +28,7 @@
             <?php
             session_start();
             if (isset($_GET['car'])){
-                $car=$_POST['car'];
+                $car=$_GET['car'];
             }
             else{
                 $car='lexus';
@@ -37,7 +37,7 @@
             <div class="container-fluid my-3 px-5">
                 <div class="row">
                     <div class="col-md-5">
-                        <img src=<?php echo"img/".$car."png"?> width="500" alt="">
+                        <img src=<?php echo"img/".$car.".png"?> width="500" alt="">
                     </div>
                     <div class="col-md-7">
                         <h4>Rent your car now!</h4>

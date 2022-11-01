@@ -50,7 +50,7 @@
                             <th scope="row"><?php echo rand(1000000000,9999999999)?></th>
                             <td><?php echo $_POST['name']?></td>
                             <td><?php echo $_POST['bookdate']." ".$_POST['starttime'] ?></td>
-                            <td><?php echo date('Y-m-d', strtotime($_POST['bookdate'].'*'.$_POST['duration'].'days'." ".$_POST['starttime'] ))  ?></td>
+                            <td><?php echo date('Y-m-d', strtotime($_POST['bookdate'].'+'.$_POST['duration'].'days'." ".$_POST['starttime'] ))  ?></td>
                             <td><?php echo $_POST['type'] ?></td>
                             <td><?php echo $_POST['phone'] ?></td>
                             <td>
