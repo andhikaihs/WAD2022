@@ -45,6 +45,7 @@
         <div class="row mt-3">
         <?php 
             if($row == 0) {?>
+            require ''
             <h3 class='text-center' style='margin-top:150px'>Tidak Ada Mobil</h3>
             <?php }
             else{
