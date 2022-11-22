@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/Home-Andhika.php">Home</a>
+                <a class="nav-link text-white" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link text-white" href="../pages/ListCar-Andhika.php">MyCar</a>

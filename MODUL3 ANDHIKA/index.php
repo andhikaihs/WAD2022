@@ -1,2 +1,2 @@
 <?php 
-require './Home-Andhika.php';
+require './pages/Home-Andhika.php';

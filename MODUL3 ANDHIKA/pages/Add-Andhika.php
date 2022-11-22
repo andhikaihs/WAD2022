@@ -1,3 +1,9 @@
+<?php
+require '../config/connector.php';
+
+$query = "SELECT * FROM showroom_andhika_table";
+$hasil = mysqli_query($conn, $query);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +20,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link text-white" href="./Home-Andhika.php">Home</a>
+                <a class="nav-link text-white" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-white" href="./ListCar-Andhika.php">MyCar</a>
+                <a class="nav-link text-white" href="<?php if (mysqli_num_rows($hasil) > 0) {
+                                                    echo "./ListCar-Andhika.php";
+                                                    } else {
+                                                    echo "./Add-Andhika.php";
+                                                    } ?>">MyCar</a>
                 </li>
             </ul>   
             </div>
@@ -53,7 +63,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3" placeholder="The first all-electric Gran Coupé, the BMW i4 delivers outstanding dynamics with a high level of comfort and the ideal qualities to make it your daily driver. The five-door model comes equipped with fifth-generation BMW eDrive technology for sporty performance figures – reaching up to 340 hp. With a long range of up to 591 kilometres* and five spacious full-sized seats, it is the perfect companion for any journey."></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="5" placeholder="The first all-electric Gran Coupé, the BMW i4 delivers outstanding dynamics with a high level of comfort and the ideal qualities to make it your daily driver. The five-door model comes equipped with fifth-generation BMW eDrive technology for sporty performance figures – reaching up to 340 hp. With a long range of up to 591 kilometres* and five spacious full-sized seats, it is the perfect companion for any journey."></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Foto</label>
@@ -70,7 +80,7 @@
                             <label class="form-check-label" for="inlineRadio2">Belum Lunas</label>
                         </div>
                     </div>
-                    <div class="mt-3">
+                    <div class="mt-3 pb-3">
                         <button class="btn btn-primary" type="submit">Selesai</button>
                     </div>
                 </div>

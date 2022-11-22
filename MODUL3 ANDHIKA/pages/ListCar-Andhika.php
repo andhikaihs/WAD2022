@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link text-white" href="./Home-Andhika.php">Home</a>
+                <a class="nav-link text-white" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-white" href="./ListCar-Andhika.php">MyCar</a>
+                <a class="nav-link text-white" href="">MyCar</a>
                 </li>
             </ul>
             </div>
@@ -45,7 +45,6 @@
         <div class="row mt-3">
         <?php 
             if($row == 0) {?>
-            require ''
             <h3 class='text-center' style='margin-top:150px'>Tidak Ada Mobil</h3>
             <?php }
             else{
@@ -56,7 +55,7 @@
                     <img src="../asset/image/<?php echo($data['foto_mobil'])?>" class="card-img-top"  height="200" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><b><?php echo($data['nama_mobil'])?></b></h5>
-                        <p class="card-text"><?php echo($data['deskripsi'])?></p>
+                        <p class="card-text"><?php echo(substr($data['deskripsi'], 0, 80))?>...</p>
                         <a href="Detail-Andhika.php?id=<?php echo($data['id_mobil'])?>" class="btn btn-primary rounded-pill px-4">Detail</a>
                         <a href="../config/delete.php?id=<?php echo($data['id_mobil'])?>" class="btn btn-danger rounded-pill px-4">Delete</a>
                     </div>
