@@ -31,7 +31,7 @@
         </div>
     </nav>
     <div class="container">
-        <?php while($data = mysqli_fetch_array($show)) { ?>
+        <?php while($datas = mysqli_fetch_array($show)) { ?>
         <div class="row pt-5">
             <div class="col-md-12 mt-3">
                 <h3><b><?php echo($data['nama_mobil']) ?></b></h3>
