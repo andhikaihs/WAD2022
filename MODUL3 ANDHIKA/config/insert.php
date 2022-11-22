@@ -17,7 +17,7 @@ $ext = pathinfo($filename, PATHINFO_EXTENSION);
 $path = $id.'_'.$filename;
 move_uploaded_file($_FILES['img']['tmp_name'],'../asset/image/'.$path);
 
-$query = "INSERT showroom_andhika_table VALUES ('$id', '$carName','$owner','$date', '$desc')";
+$query = "INSERT INTO showroom_andhika_table VALUES ('$id', '$carName','$owner','$date', '$desc')";
 
 if (!mysqli_query($conn, "INSERT INTO showroom_andhika_table VALUES ('$id','$carName','$owner','$merk','$date','$desc','$path','$status')")){
     echo ("Error description: " . mysqli_error($conn));
