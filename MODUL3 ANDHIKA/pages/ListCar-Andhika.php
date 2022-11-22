@@ -50,7 +50,7 @@
             else{
                 while($data = mysqli_fetch_array($show)) {
             ?>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5">
                 <div class="card" style="width: 18rem;">
                     <img src="../asset/image/<?php echo($data['foto_mobil'])?>" class="card-img-top"  height="200" alt="...">
                     <div class="card-body">

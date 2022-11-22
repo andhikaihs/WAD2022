@@ -1,7 +1,7 @@
 <?php 
 include ("connector.php");
 
-$id = rand();
+$id = rand(1000,9999);
 $carName = $_POST['carName'];
 $owner = $_POST['owner'];
 $merk = $_POST['merk'];
