@@ -9,7 +9,7 @@ $check = mysqli_query($conn, $emailCheck);
 echo(mysqli_num_rows($check));
 echo($check);
 
-if(mysqli_num_rows($check)!==1){
+if(mysqli_num_rows($check)==1){
     $result = mysqli_fetch_assoc($check);   
 
     if($password == $result['password']){
