@@ -1,5 +1,4 @@
 <?php
-    session_start();
     require './config/connector.php';
 
     $query = "SELECT * FROM showroom_andhika_table";
@@ -35,7 +34,7 @@
                 </ul>
             </div>
             <div class="d-flex">
-                <?php if($_SESSION != null){ ?>
+                <?php if($_SESSION = null){ ?>
                     <div class="dropdown">
                         <button class="btn btn-light text-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo $_SESSION['nama'] ?>
