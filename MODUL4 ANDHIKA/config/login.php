@@ -6,9 +6,7 @@ $password = $_POST['password'];
 
 $emailCheck = "SELECT * FROM user_andhika WHERE email = '$email'";
 $check = mysqli_query($conn, $emailCheck);
-echo(mysqli_num_rows($check));
-echo($check);
-
+session_start();
 if(mysqli_num_rows($check)==1){
     $result = mysqli_fetch_assoc($check);   
 
@@ -19,13 +17,15 @@ if(mysqli_num_rows($check)==1){
         $_SESSION['no_hp'] = $result['no_hp'];
 
         $_SESSION['message'] = 'Berhasil Login';
-        echo($result);
-        header("location:index.php");
+        header("location:../index.php");
+    } else { ?>
+        <div class="alert alert-danger mt-5">Email Salah</div>
+    <?php
     }
     
 }
-else{
-    echo("error");
+else{ ?>
+    <div class="alert alert-danger mt-5">Email Salah</div>
+<?php
 }
-
 ?>

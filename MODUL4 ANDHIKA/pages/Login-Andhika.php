@@ -1,36 +1,10 @@
 <?php 
+// Create connection
 include ("../config/connector.php");
 
-// Create connection
 session_start();
-//$conn = new mysqli("localhost:3308", "modul3", "root", "123");
-    
-if (isset($_POST['login'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
- 
-    $sql = mysqli_query($conn, "SELECT * FROM user_andhika WHERE email = '$email'");
-    $cek = mysqli_num_rows($sql);
+include ("../config/login.php");
 
-    if ($cek==1) {
-        $_SESSION['status']="sudah_login";
-        $result = mysqli_fetch_assoc($sql);
-        echo $result['id'];
-        $_SESSION['id'] = $result['id'];
-        $_SESSION['nama'] = $result['nama'];
-        $_SESSION['email'] = $result['email'];
-        $_SESSION['no_hp'] = $result['no_hp'];
-        
-        header("location:../index.php");
-    }
-    else {  
-      ?>
-         <div class="alert alert-danger mt-5">
-           Gagal login
-         </div>
-       <?php
-    }
-}
 ?>
 <!doctype html>
     <html lang="en">
@@ -68,7 +42,7 @@ if (isset($_POST['login'])) {
                         </div>
                         <a href="Add-Andhika.php" class="btn btn-light text-primary mx-3">Add Car</a>
                     <?php } else{ ?>
-                        <a class="nav-link text-white" href="../pages/Login-Andhika.php mx-4">Login</a>
+                        <a href="../pages/Login-Andhika.php" class="nav-link text-white mx-4">Login</a>
                     <?php } ?>
                 </div>
             </div>
