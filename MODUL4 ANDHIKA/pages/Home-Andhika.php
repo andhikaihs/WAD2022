@@ -44,7 +44,7 @@
                             <li><a class="dropdown-item" href="./config/logout.php">logout</a></li>
                         </ul>
                     </div>
-                    <a href="Add-Andhika.php" class="btn btn-light text-primary mx-3">Add Car</a>
+                    <a href="./pages/Add-Andhika.php" class="btn btn-light text-primary mx-3">Add Car</a>
                 <?php } else{ ?>
                     <a class="nav-link text-white" href="../MODUL4 ANDHIKA/pages/Login-Andhika.php">Login</a>
                 <?php } ?>
