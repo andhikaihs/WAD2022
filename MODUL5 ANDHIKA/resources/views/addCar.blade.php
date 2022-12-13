@@ -19,7 +19,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nama Pemilik</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name="owner" placeholder="Risti-1202201027">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="owner" placeholder="Andhika_1202200168">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Merk</label>

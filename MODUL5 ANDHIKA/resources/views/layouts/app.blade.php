@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Car Rents Risty') }}</title>
+    <title>{{ config('app.name', 'Car Rents') }}</title>
+    <!--<title>Rental Andhika</title>-->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

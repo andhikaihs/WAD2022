@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost:3308";
-$dbname = "modul3";
+$dbname = "wad_modul4_andhika";
 $username = "root";
 $password = "123";
 
