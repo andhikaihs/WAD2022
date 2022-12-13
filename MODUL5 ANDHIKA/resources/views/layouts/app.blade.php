@@ -66,7 +66,7 @@
                             <a href="{{route('addCar')}}" class="btn btn-light text-primary mr-3"> Add Car</a>
                             <div class="ml-3 dropdown">
                                 <a class="btn btn-light text-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->nama }}
                                 </a>
                             
                                 <ul class="dropdown-menu">

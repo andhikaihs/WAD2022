@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/addCar', [App\Http\Controllers\CarController::class, 'create'])->name('addCar');
-Route::post('/storeCar', [App\Http\Controllers\CarController::class, 'store'])->name('storeCar');
+Route::get('/storeCar', [App\Http\Controllers\CarController::class, 'store'])->name('storeCar');
 Route::get('/myCar', [App\Http\Controllers\CarController::class, 'index'])->name('myCar');
 Route::get('/myCar/details/{id}', [App\Http\Controllers\CarController::class, 'show'])->name('carDetail');
 Route::get('/myCar/update/{id}', [App\Http\Controllers\CarController::class, 'edit'])->name('carEdit');
