@@ -25,7 +25,7 @@ Route::get('/storeCar', [App\Http\Controllers\CarController::class, 'store'])->n
 Route::get('/myCar', [App\Http\Controllers\CarController::class, 'index'])->name('myCar');
 Route::get('/myCar/details/{id}', [App\Http\Controllers\CarController::class, 'show'])->name('carDetail');
 Route::get('/myCar/update/{id}', [App\Http\Controllers\CarController::class, 'edit'])->name('carEdit');
-Route::put('/myCar/edit/{id}', [App\Http\Controllers\CarController::class, 'update'])->name('carUpdate');
+Route::get('/myCar/edit/{id}', [App\Http\Controllers\CarController::class, 'update'])->name('carUpdate');
 Route::get('/myCar/delete/{id}', [App\Http\Controllers\CarController::class, 'destroy'])->name('carDelete');
 
 Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('profile');

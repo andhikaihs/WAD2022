@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<!--car update14 -->
     <div class="row">
         <div class="col-md-6">
             <div class="d-flex justify-content-center align-items-center min-vh-100 ">

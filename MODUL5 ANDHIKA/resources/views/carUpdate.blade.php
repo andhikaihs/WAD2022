@@ -14,7 +14,7 @@
             <img src="{{asset($car->image)}}" width="100%" alt="">
         </div>
         <div class="col-md-8">
-            <form action="/myCar/edit/{{$car->name}}" method="POST" enctype="multipart/form-data">
+            <form action="/myCar/edit/{{$car->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
